@@ -1,9 +1,14 @@
 # Python3
 Мои заметки по питону
 
-
+Замена  format на f-strings
 ```python3
-
-print(1)
-
+world = "world"
+log_message = 'Hello {} !'.format(world)
 ```
+Лучше
+```python3
+world = "world"
+log_message = f'Hello {world} !'.format(world)
+```
+
