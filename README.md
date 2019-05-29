@@ -12,3 +12,9 @@ world = "world"
 log_message = f'Hello {world} !'.format(world)
 ```
 
+Dict
+```python3
+a = {"hi" : 70}
+b = a.get("Hey", 100) # b = 100
+```
+
