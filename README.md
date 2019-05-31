@@ -18,3 +18,7 @@ a = {"hi" : 70}
 b = a.get("Hey", 100) # b = 100
 ```
 
+Spread 
+```python3
+a, *b, c = range(5) # a = 0, b = [1, 2, 3], c = 4
+```
