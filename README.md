@@ -32,5 +32,5 @@ def fib_memoization(number: int) -> int:
     return fib_memoization(number-1) + fib_memoization(number-2)
 start = time.time()
 fib_memoization(40)
-print(f'Duration: {time.time() - start}s')
+print(f'Duration: {time.time() - start}s') # # Duration: 6.866455078125e-05s
 ```
