@@ -5,9 +5,7 @@
 ```python3
 world = "world"
 log_message = 'Hello {} !'.format(world)
-```
-Лучше
-```python3
+# Лучше
 world = "world"
 log_message = f'Hello {world} !'.format(world)
 ```
