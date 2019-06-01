@@ -34,7 +34,7 @@ start = time.time()
 fib_memoization(40)
 print(f'Duration: {time.time() - start}s') # # Duration: 6.866455078125e-05s
 ```
-Значение "__var"
+Значение "__var" в классе
 ```python3
 class ManglingTest:
      def __init__(self):
@@ -45,4 +45,29 @@ class ManglingTest:
 ManglingTest().get_mangled()
 ManglingTest().__mangled # AttributeError: "'ManglingTest' object has no attribute '__mangled'"
 # Python3 автоматически не дает доступа к методам, переменным и т.д. начинающимся с __
+```
+Декоратор
+```python3
+def bread(func):
+    def wrapper():
+        print("1      ^")
+        func()
+        print("5 </_______\>")
+    return wrapper
+ 
+def ingredients(func):
+    def wrapper():
+        print("2    </_\>")
+        func()
+        print("4  </_____\>")
+    return wrapper
+ 
+def sandwich(food="3   </___\>"):
+    print(food)
+    
+@bread
+@ingredients
+def sandwich(ent="3   </___\>"): # or sandwich = bread(ingredients(sandwich))
+    print(ent)
+sandwich() 
 ```
