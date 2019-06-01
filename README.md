@@ -34,3 +34,15 @@ start = time.time()
 fib_memoization(40)
 print(f'Duration: {time.time() - start}s') # # Duration: 6.866455078125e-05s
 ```
+Значение "__var"
+```python3
+class ManglingTest:
+     def __init__(self):
+         self.__mangled = 'Привет'
+        
+     def get_mangled(self):
+         return self.__mangled
+ManglingTest().get_mangled()
+ManglingTest().__mangled # AttributeError: "'ManglingTest' object has no attribute '__mangled'"
+# Python3 автоматически не дает доступа к методам начинающимся с __
+```
