@@ -44,5 +44,5 @@ class ManglingTest:
          return self.__mangled
 ManglingTest().get_mangled()
 ManglingTest().__mangled # AttributeError: "'ManglingTest' object has no attribute '__mangled'"
-# Python3 автоматически не дает доступа к методам начинающимся с __
+# Python3 автоматически не дает доступа к методам, переменным и т.д. начинающимся с __
 ```
