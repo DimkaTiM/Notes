@@ -1,13 +1,15 @@
 # Python3
 Мои заметки по питону
 
-Замена  format на f-strings
+Форматирование строк
 ```python3
 world = "world"
 log_message = 'Hello {} !'.format(world)
 # Лучше
 world = "world"
 log_message = f'Hello {world} !'.format(world)
+#Еще есть на подобии Си
+'Привет, %s ' %world
 ```
 
 Dict
