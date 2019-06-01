@@ -9,7 +9,7 @@ log_message = 'Hello {} !'.format(world)
 world = "world"
 log_message = f'Hello {world} !'.format(world)
 #Еще есть на подобии Си
-'Привет, %s ' %world
+' %s! %s!' %("Hello", world)
 ```
 
 Dict
