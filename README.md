@@ -70,4 +70,19 @@ def sandwich(food="3   </___\>"):
 def sandwich(ent="3   </___\>"): # or sandwich = bread(ingredients(sandwich))
     print(ent)
 sandwich() 
+#1      ^
+#2    </_\>
+#3   </___\>
+#4  </_____\>
+#5 </_______\>
 ```
+
+Странная работа с методом класса
+```python3
+_Example__bar = "привет из глобалки"
+class Example:
+     def test(self):
+         return __bar
+Example().test()
+```
+
