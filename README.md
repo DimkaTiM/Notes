@@ -105,3 +105,10 @@ class Base(metaclass=ABCMeta):
     def foo(self):
         pass
 ```
+Дата класс
+```python3
+from dataclasses import dataclass
+@dataclass
+class Armor:
+    armor: float
+```
