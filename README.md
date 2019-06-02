@@ -12,6 +12,11 @@ log_message = f'Hello {world} !'
 ' %s! %s!' %("Hello", world)
 #Еще
 '%(name)s %(world)s!' % { "name": "Hello", "world": "world" }
+# И еще
+name = "ты"
+from string import Template 
+t = Template('Эй $name!')
+t.substitute(name=name) # 'Эй ты!'
 ```
 
 Dict
