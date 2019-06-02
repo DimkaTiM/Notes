@@ -10,6 +10,8 @@ world = "world"
 log_message = f'Hello {world} !'.format(world)
 #Еще есть на подобии Си
 ' %s! %s!' %("Hello", world)
+#Еще
+'%(name)s %(world)s!' % { "name": "Hello", "world": "world" }
 ```
 
 Dict
