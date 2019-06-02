@@ -98,4 +98,10 @@ class Example:
          return __bar
 Example().test()
 ```
-
+Класс с абстрактным методом
+```python3
+class Base(metaclass=ABCMeta):
+    @abstractmethod
+    def foo(self):
+        pass
+```
