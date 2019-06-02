@@ -4,10 +4,10 @@
 Форматирование строк
 ```python3
 world = "world"
-log_message = 'Hello {} !'.format(world)
+log_message = 'Hello {world} !'.format(world=world)
 # Лучше
 world = "world"
-log_message = f'Hello {world} !'.format(world)
+log_message = f'Hello {world} !'
 #Еще есть на подобии Си
 ' %s! %s!' %("Hello", world)
 #Еще
