@@ -115,3 +115,17 @@ from dataclasses import dataclass
 class Armor:
     armor: float
 ```
+ __slots__ для оптимизации класса
+```python3
+>>> import attr
+>>> @attr.s(slots=True)
+... class Coordinates(object):
+...     x = attr.ib()
+...     y = attr.ib()
+...
+>>> c = Coordinates(x=1, y=2)
+>>> c.z = 3
+Traceback (most recent call last):
+    ...
+AttributeError: 'Coordinates' object has no attribute 'z'
+```
