@@ -129,3 +129,22 @@ Traceback (most recent call last):
     ...
 AttributeError: 'Coordinates' object has no attribute 'z'
 ```
+различия __str__ и __repr__
+```python3
+class Example:
+     def __init__(self, color):
+         self.color = color
+     def __repr__(self):
+         return '__repr__ для объекта Example'
+     def __str__(self):
+         return '__str__ для объекта Example'
+         
+         
+>>> my_ex = Example('красный')
+>>> print(my_ex)
+__str__ для объекта Example
+>>> '{}'.format(my_ex)
+'__str__ для объекта Example'
+>>> my_ex
+__repr__ для объекта Example
+```
