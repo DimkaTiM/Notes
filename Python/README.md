@@ -158,3 +158,17 @@ import copy
 xs = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 zs = copy.deepcopy(xs)
 ```
+
+namedtuple - кортеж с доступом по имени 
+```python3
+from collections import namedtuple
+Car = namedtuple('Авто', [
+     'цвет',
+     'пробег',
+ ])
+ 
+ >>> my_car = Car('красный', 3812.4) >>> my_car.цвет
+'красный'
+>>> my_car.пробег
+3812.4
+```
