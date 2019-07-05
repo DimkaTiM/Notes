@@ -147,4 +147,8 @@ __str__ для объекта Example
 '__str__ для объекта Example'
 >>> my_ex
 __repr__ для объекта Example
+
+# Флаг !r для ототбражения __repr__ вместо __str__
+def __repr__(self):
+     return f'Example({self.color!r})'
 ```
